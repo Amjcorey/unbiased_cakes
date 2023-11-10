@@ -1,36 +1,55 @@
 :root {
     --main-font-family: 'Poppins', sans-serif;
 }
-
 *{
-  box-sizing: border-box;
-    font-family: var(--main-font-family);
+    background-color: black;
+    box-sizing: border-box;
+    color: #fff;
     margin: 0;
-    padding: 0;  
+    padding: 0; 
+}
+body{
+    font-family: var(--main-font-family);
 }
 
-body {
-    background: chocolate;
-    
+h2 {
+    font-size: 60px;
 }
 
-/* container class code */
+#header{
+    background-color: black;
+    background-position: center;
+    height: 50vh;
+    width: 100%;  
+}
 
+
+
+/* container class contains navbar */
 .container {
-    padding: 10px;
+    padding: 10px 10%;
 }
-
 
 /* navigation code */
 
 nav {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+nav p {
+    font-size: 32px;
+    line-height: 1.5;
+    width: 10px;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
+    margin: 10px 20px;
 }
 
 nav ul li a {
@@ -41,9 +60,13 @@ nav ul li a {
 }
 
 nav ul li a::after {
-    
-    background: #ff004f;
+    background: aquamarine;
+    bottom: -6px;
+    content: '';
+    height: 3px;
     left: 0;
+    position: absolute;
+    transition: 0.3s;
     width: 0;
 }
 
@@ -52,7 +75,96 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-
     margin-top: 20%;
     font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: aquamarine;
+}
+
+/*--------------------About--*/
+
+#about {
+    color: #ababab;
+    padding: 80px 0;
+    margin: 20px;
+}
+
+#about a:hover {
+    color: blueviolet;
+}
+
+#about a:hover::after {
+    content: ': Online Coding Workshops for Women';
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-col-1 {
+    flex-basis: 30%;    
+}
+
+.about-col-1 img {
+    width: 100%;
+}
+
+.about-col-2 {
+    flex-basis: 60%; 
+}
+
+<!--------------------Projects-->
+#projects {
+    padding: 50px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 80px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 8px;
+    position: relative;
+}
+
+.work img {
+    border-radius: 8px;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.work img:hover {
+    transform: scaleX(-1);
+
+}
+
+
+/*--------------------Footer--*/
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+    padding: 30px 120px;
+}
+
+footer h4 {
+    font-size: 24px;
+}
+
+footer .bottom-footer {
+    font-size: 12px;
+
 }

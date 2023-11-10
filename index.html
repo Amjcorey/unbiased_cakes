@@ -17,24 +17,86 @@
 
 
 <body>
-<div class="header">
+<div id="header">
     <div class="container">
         <nav>
+            <p class="amanda"><span style="color: aquamarine;">A</span>manda.</p>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" title="Homepage">Home</a></li>
+                <li><a href="#" title="Projects">My Work</a></li>
+                <li><a href="#" title="Contact Amanda">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-text">
+            <p>Junior Developer</p>
+            <h1>Hello, I'm <span>Amanda</span> 
+                <br>Corey from Seattle,
+                <br>Washington
+            </h1>
+        </div>
     </div>
-    <div class="header-text">
-        <p>Junior Developer</p>
-        <h1>Hello, I am Amanda Corey from America</h1>
-    </div>
-
-
-
-
 </div>
+
+<!--------------------About-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="styles/images/womanAtComputer.png" alt="Woman programing">
+            </div>
+            <div class="about-col-2">
+                <h2>About Me</h2>
+                <p>Front-end enginer from rainy Seattle, Washington. I am a junior developer that creates websites to help people get their ideas online. 
+                    I graduated in 2016 from Western Washington University. 
+                    I have completed the <a href="https://www.shecodes.io/">SheCodes</a> Basic, Plus, Responsive and React courses from 2021 to 2022. In 2023, I began the University of Oregon Bootcamp for Coding.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------Projects-->
+<div id="projects">
+    <div class="container">
+        <h2 class="project-description">My Work</h2>
+        <div class="project-list">
+            <div class="work">
+                <a href="https://amjcorey.github.io/Weather-Loader/">
+                    <img src="styles/images/weatherIcon.png" alt="Weather Loader">
+                </a>
+                <h3>
+                    Animated Weather Loader
+                </h3>
+                <p>HTML, CSS, JavaScript
+                    <br>
+                    <a href="https://github.com/Amjcorey/Weather-Loader.git"></a>
+                   </p>
+            </div>
+            <div class="work">
+               <a href="https://amjcorey.github.io/vanilla_weather-app/" target="_blank">
+                <img src="styles/images/weatherIcon.png" alt="JS Weather App">
+               </a> 
+               <h3>Vanilla Weather App</h3>
+               <p>HTML, CSS, JavaScript, API
+                <br>
+                <a href="https://github.com/Amjcorey/vanilla_weather-app.git"></a>
+               </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------------------Footer-->
+<div class="footer">
+    <footer>
+        <h4>Let's code!</h4>
+        <div class="email-link">
+          <p>Email me at: <a href="mailto:amjcorey@gmail.com">amjcorey@gmail.com</a></p>
+        </div>
+        <p class="bottom-footer">Coded with heart by Amanda Corey</p>
+    </footer>
+</div>
+
 </body>
 </html>
