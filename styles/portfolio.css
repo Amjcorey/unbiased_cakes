@@ -2,6 +2,57 @@
     --main-font-family: 'Poppins', sans-serif;
 }
 
-body {
+*{
+  box-sizing: border-box;
     font-family: var(--main-font-family);
+    margin: 0;
+    padding: 0;  
+}
+
+body {
+    background: chocolate;
+    
+}
+
+/* container class code */
+
+.container {
+    padding: 10px;
+}
+
+
+/* navigation code */
+
+nav {
+    align-items: center;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+}
+
+nav ul li a::after {
+    
+    background: #ff004f;
+    left: 0;
+    width: 0;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+
+    margin-top: 20%;
+    font-size: 30px;
 }
